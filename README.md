@@ -2,17 +2,17 @@
 
 ![image](https://user-images.githubusercontent.com/127632796/228795998-338f1229-2205-46a3-8b02-cc9e5db55961.png)
 
-# INTRODUCTION
+# INTRODUCTION:
 
 I was privileged to join a #datacleaningchallenge that was organized by @PromiseNonso on Twitter. This was my first cleaning project and I can say it was one of the dirtiest datasets I have seen so far.The dataset used is the FIFA-21 dataset that was gotten from [kaggle.com](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring). The challenge was to help data enthusiasts test the ability of beginners, intermediates and experts in turning the messy dataset into a clean one.
 
-# DATASET DESCRIPTION
+# DATASET DESCRIPTION:
 
 ![image](https://user-images.githubusercontent.com/127632796/228798316-6f48d90e-06d0-4604-9223-22402b97a516.png)
 
 The dataset used for this challenge is the Fifa-21 dataset. The dataset was obtained in its raw state after webscrapping from sofifa.com. It contains the details of football players alongside their performances. The dataset contains 18979 rows and 77 columns. The datafile also includes a data dictionary to further give the data analyst more insight on the player's information.
 
-# DATA_CLEANING PROCESS
+# DATA_CLEANING PROCESS:
 
 ![image](https://user-images.githubusercontent.com/127632796/228799912-414d86d7-4307-495b-b2a0-197217c50a87.png)
 
@@ -20,7 +20,7 @@ The dataset used for this challenge is the Fifa-21 dataset. The dataset was obta
 
 The file was imported using the “get data from text/csv” to remove all the special characters. Duplicates were checked. The column ID is a “unique identifier” and the data type was changed to text. White spaces were removed from the name and long name by using the TRIM function and I also made use of the PROPER function to ensure the columns were in the right cases. The data types of the Name and Full name were converted to text and the Long name was renamed as Full name.
 
-![picture 1](https://user-images.githubusercontent.com/127632796/228802585-66a3a96e-60ba-4aec-8c12-8c8ca4e53075.png)
+![picture 1](https://user-images.githubusercontent.com/127632796/228834248-ca1fad9b-0b81-4870-a9cd-b9b2291fc3e6.png)
 
 # PLAYERURL, PHOTOURL AND NATIONALITY:
 
@@ -32,23 +32,23 @@ The playerurl and photourl contain the player's pictures and information. The da
 
 The age column contains the age of the respective players and was originally in the text data type. The OVA and POT columns contain the overall player's performance. According to the data dictionary, these columns were supposed to be in percentage.
 
-![picture 3](https://user-images.githubusercontent.com/127632796/228806011-7beffd40-7723-4bf3-810e-cd7eb8e95c63.png)
+![picture 3](https://user-images.githubusercontent.com/127632796/228834483-ddea30ae-2a92-4d22-8ee4-6b0148647ea3.png)
 
 The Age column was converted to the number data type. The OVA and POT columns were converted to percentage by creating a new column and dividing the OVA and POT columns by 100 respectively. The data type was converted to percentage.
 
-![picture 4](https://user-images.githubusercontent.com/127632796/228806514-c67a20e2-00f7-411d-8e48-ac3f4b8f4e94.png)
+![picture 4](https://user-images.githubusercontent.com/127632796/228834902-20b57511-c062-4fb5-b0d0-8c7ae97a212f.png)
 
 # CLUB AND CONTRACT:
 
 Some of the cells in the Club column contain numerical prefix and also a wrong data type. The Contract column contains inconsistent data entries. It specifies players on lengthy contract, players that are free and players on loan.
 
-![Screenshot (14)](https://user-images.githubusercontent.com/127632796/228808965-5e756f30-8b39-4115-84a7-54b08b03d80a.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/127632796/228835249-effa456f-3a73-43e8-b58b-9cd049a0f8ac.png)
 
 The club column was Trimmed and the proper function was used. The inconsistent entries were corrected using the find and replace function. The Contract Year was separated using the Text to column to get the contractStartYear and ContractEndyear. The Contract Duration was gotten by subtracting the ContractEndYear from the ContractStartYear. The Contract Year of the footballers that were on loan was removed since this information was found in another column named "LoanDateEnd".
 
-![Screenshot (13)](https://user-images.githubusercontent.com/127632796/228811048-a219bce5-7da3-4ce9-b488-4b6444f0b960.png)
+![Screenshot (13)](https://user-images.githubusercontent.com/127632796/228835644-91d8ef3c-aa40-4904-8439-fbdd4efa5dbd.png)
 
-# POSITION, HEIGHT AND WEIGHT
+# POSITION, HEIGHT AND WEIGHT:
 
 The Position column contains one or more positions the players had ever played in. The Height column contains the player's height number. These values were written in two different data formats; the value in “cm”and the value in “ft and inches”.  The Weight column contains the weight number of each player which were written in two different formats; the values in “kg” and the values in “lbs".
 
@@ -58,11 +58,11 @@ The Position Column was deleted as another column named “Best Position” also
 
 ![Screenshot (15)](https://user-images.githubusercontent.com/127632796/228816951-f4e88043-7a32-4ced-95fe-a18c19ef5697.png)
 
-# BOV, BEST POSITION, JOINED AND LOANDATE END
+# BOV, BEST POSITION, JOINED AND LOANDATE END:
 
 BOV, Best Position looks perfect but the data type was change. The Joined data type was changed to short date. The LoanDateEnd contains empty cells for players that were not on loan.The empty cells were replaced with "null" while the free players were replaced with "free".
 
-![Screenshot (36)](https://user-images.githubusercontent.com/127632796/228820128-5028d711-5ecf-4ec9-ba75-6b1e2b12678b.png)
+![Screenshot (17)](https://user-images.githubusercontent.com/127632796/228836443-2e4114a4-ae0f-42c2-85ba-f9edf17411ac.png)
 
 # VALUE, WAGE AND RELEASE CLAUSE:
 
@@ -88,7 +88,7 @@ The special character was deleted and the data type was changed to number.
 
 ![Screenshot (34)](https://user-images.githubusercontent.com/127632796/228824678-98ff4d39-878f-446f-97af-4874d711abf4.png)
 
-# HITS
+# HITS:
 
 The Hits Column contains inconsistent data entries where some of the cells contain 'K', where the K represents 'thousand'.The column data type was incorrect.
 
@@ -98,5 +98,9 @@ The IF Statement was used to multiply the values with 'K' by 1000 and the data t
 
 ![Screenshot (39)](https://user-images.githubusercontent.com/127632796/228826687-caeb4065-e8d4-4c83-bdfc-292e1ea87985.png)
 
+# CONCLUSION:
 
-# CONCLUSION
+Having cross-checked my dataset for spelling errors, irrelevant data, duplicate, incorrect data type, outliers and empty cells, I can conclude that the dataset is now clean and can be used for analysis and visualization.
+I am glad I was able to participate and learn so many things during the data cleaning process. I am open to correction or any addition.
+
+Thank you for reading. For further information, kindly follow me on linkedin @DamilolaOlabulo and twitter @OlabuloD.
