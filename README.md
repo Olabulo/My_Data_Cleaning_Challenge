@@ -50,23 +50,23 @@ The club column was Trimmed and the proper function was used. The inconsistent e
 
 # POSITION, HEIGHT AND WEIGHT:
 
-The Position column contains one or more positions the players had ever played in. The Height column contains the player's height number. These values were written in two different data formats; the value in “cm”and the value in “ft and inches”.  The Weight column contains the weight number of each player which were written in two different formats; the values in “kg” and the values in “lbs".
+The Position column contains one or more positions the players had ever played in. The Height column contains the player's height. These values were written in two different data formats; the value in “cm”and the value in “ft and inches”.  The Weight column contains the weight of each player which was written in two different formats; the values in “kg” and the values in “lbs".
 
 ![Screenshot (16)](https://user-images.githubusercontent.com/127632796/228813642-005480ca-a332-42e1-ad75-aad0555f4b50.png)
 
-The Position Column was deleted as another column named “Best Position” also exist in the dataset which includes the best position fit for each player. For the Height column, I started by filtering out the values that contained "cm" and using the find and replace function to remove the cm. A new column was created where the function (=TRUNC(N2/2.54/12)&"' "&ROUND(MOD(N2/2.54,12),0)&"""") to convert to ft and inches. After that, I copied the data already in ft and inches and added them to the new column. Similarly, the weight column was corrected using the  IF statement to convert "kg" to "lbs". The values in kg under the weight column were multiplied by 2.205 since that is the standard convertion rate from kg to lbs.
+The Position Column was deleted as another column named “Best Position” also exists in the dataset which includes the best position fit for each player. For the Height column, I started by filtering out the values that contained "cm" and using the find and replace function to remove the cm. A new column was created where the function (=TRUNC(N2/2.54/12)&"' "&ROUND(MOD(N2/2.54,12),0)&"""") to convert to ft and inches. After that, I copied the data already in ft and inches and added them to the new column. Similarly, the weight column was corrected using the  IF statement to convert "kg" to "lbs". The values in kg under the weight column were multiplied by 2.205 since that is the standard convertion rate from kg to lbs.
 
 ![Screenshot (15)](https://user-images.githubusercontent.com/127632796/228816951-f4e88043-7a32-4ced-95fe-a18c19ef5697.png)
 
 # BOV, BEST POSITION, JOINED AND LOANDATE END:
 
-BOV, Best Position looks perfect but the data type was change. The Joined data type was changed to short date. The LoanDateEnd contains empty cells for players that were not on loan.The empty cells were replaced with "null" while the free players were replaced with "free".
+BOV, Best Position looks perfect but the data type was changed. The Joined data type was changed to short date. The LoanDateEnd contains empty cells of players that were not on loan.The empty cells were replaced with "null" while the free players were replaced with "free".
 
 ![Screenshot (17)](https://user-images.githubusercontent.com/127632796/228836443-2e4114a4-ae0f-42c2-85ba-f9edf17411ac.png)
 
 # VALUE, WAGE AND RELEASE CLAUSE:
 
-The value, wage and Release Clause columns contained inconsistent data entries such as “M, K” where M represents million and K represents thousands.
+The value, wage and Release Clause columns contained inconsistent data entries such as 'M', 'K' where M represents million and K represents thousands.
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/127632796/228821029-7bb0ae2a-ecdd-422f-a6cb-2c58a44ded7a.png)
 
