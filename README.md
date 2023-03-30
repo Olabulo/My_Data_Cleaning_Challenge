@@ -4,7 +4,7 @@
 
 # INTRODUCTION:
 
-I was privileged to join a #datacleaningchallenge that was organized by @PromiseNonso on Twitter. This was my first cleaning project and I can say it was one of the dirtiest datasets I have seen so far.The dataset used is the FIFA-21 dataset that was gotten from [kaggle.com](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring). The challenge was to help data enthusiasts test the ability of beginners, intermediates and experts in turning the messy dataset into a clean one.
+I was privileged to join a #datacleaningchallenge that was organized by @PromiseNonso on Twitter. This was my first cleaning project and I can say it was one of the dirtiest datasets I have seen so far.The dataset used is the FIFA-21 dataset that was gotten from [kaggle.com](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring). The challenge was to help data enthusiasts test the ability of beginners, intermediates and experts in turning the messy dataset into a clean one. Microsoft Excel was the tool used for this task.
 
 # DATASET DESCRIPTION:
 
@@ -103,4 +103,4 @@ The IF Statement was used to multiply the values with 'K' by 1000 and the data t
 Having cross-checked my dataset for spelling errors, irrelevant data, duplicate, incorrect data type, outliers and empty cells, I can conclude that the dataset is now clean and can be used for analysis and visualization.
 I am glad I was able to participate and learn so many things during the data cleaning process. I am open to correction or any addition.
 
-Thank you for reading. For further information, kindly follow me on linkedin @DamilolaOlabulo and twitter @OlabuloD.
+Thank you for reading. For further information, kindly follow me on linkedin @ [DamilolaOlabulo] (http://linkedin.com/in/damilola-olabulo) and twitter @[OlabuloD.] (https://twitter.com/olabulod?s=11&t=i2ctVX8FrTDDa0EJgk9Rqw)
