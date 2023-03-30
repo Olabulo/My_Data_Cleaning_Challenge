@@ -103,4 +103,4 @@ The IF Statement was used to multiply the values with 'K' by 1000 and the data t
 Having cross-checked my dataset for spelling errors, irrelevant data, duplicate, incorrect data type, outliers and empty cells, I can conclude that the dataset is now clean and can be used for analysis and visualization.
 I am glad I was able to participate and learn so many things during the data cleaning process. I am open to correction or any addition.
 
-Thank you for reading. For further information, kindly follow me on linkedin @ [DamilolaOlabulo] (http://linkedin.com/in/damilola-olabulo) and twitter @[OlabuloD.] (https://twitter.com/olabulod?s=11&t=i2ctVX8FrTDDa0EJgk9Rqw)
+Thank you for reading. For further information, kindly follow me on linkedin @ [DamilolaOlabulo](http://linkedin.com/in/damilola-olabulo) and twitter @[OlabuloD.](https://twitter.com/olabulod?s=11&t=i2ctVX8FrTDDa0EJgk9Rqw)
