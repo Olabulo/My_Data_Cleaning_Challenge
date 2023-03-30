@@ -94,4 +94,9 @@ The Hits Column contains inconsistent data entries where some of the cells conta
 
 ![Screenshot (37)](https://user-images.githubusercontent.com/127632796/228826194-b5317c63-fe8f-4602-835e-add23f271a00.png)
 
+The IF Statement was used to multiply the values with 'K' by 1000 and the data type was corrected.
 
+![Screenshot (39)](https://user-images.githubusercontent.com/127632796/228826687-caeb4065-e8d4-4c83-bdfc-292e1ea87985.png)
+
+
+# CONCLUSION
